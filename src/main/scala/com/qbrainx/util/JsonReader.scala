@@ -27,11 +27,11 @@ object JsonReader{
   )
 
 
-  def ToStudent(student : String) = {
+  def toStudent(student : String) = {
     student.parseJson.convertTo[Student]
   }
 
-  def ToStudents(students : String ) = {
+  def toStudents(students : String ) = {
     students.parseJson.convertTo[Students]
   }
 

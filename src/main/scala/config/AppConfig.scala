@@ -1,6 +1,6 @@
 package config
-import com.typesafe.config.ConfigFactory
+import com.typesafe.config.{Config, ConfigFactory}
 object AppConfig {
-val config=ConfigFactory.load().getConfig("json-to-csv")
+val config:Config=ConfigFactory.load().getConfig("json-to-csv")
 
 }
